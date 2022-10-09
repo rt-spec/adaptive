@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/adaptive.css"> 
+    <title>Адаптивный дизайн</title>
+</head>
+<body>
+    <header id="header" class="page-header">
+        <div class="title">
+            <h1>Профессиональная техника для обжарщиков</h1>
+            <div class="slogan">Мы любим кофе</div>
+        </div>
+    </header>
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">Свернуть меню</button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="/about.html">О нас</a></li>
+                <li><a href="/shop.html">Магазин</a></li>
+                <li><a href="/menu.html">Меню</a></li>
+                <li><a href="/brew.html">Приготовление кофе</a></li>                
+            </ul>
+        </div>
+    </nav>
+    <aside id="hero" class="hero">
+        Добро пожаловать на сайт нашей компании! Всеми силами мы 
+        стараемся поддерживать репутацию лучшей компании для обжарщиков.
+    </aside>
+    <main id="main">
+        <div class="row">
+            <section class="column">
+                <h2 class="subtitle">Моносорта</h2>
+                <p>Мы сотрудничаем с небольшими плантациями по всему миру, 
+                    чтобы собирать зерна в пик сезона. Затем мы тщательно поджариваем зерна
+                <a href="/batch-size.html">небольшими партиями</a>, чтобы максимально раскрыть их потенциал.</p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Смеси</h2>
+                <p>Наши дегустаторы подобрали тщательно сбалансированые смеси на любой вкус. 
+                    Легендарная смесь <a href="/hoese-blend.html">Вкус компании</a> в продаже есть всегда</p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Приготовление кофе</h2>
+                <p>Мы продаем также лучшие кофеварки, френч-прессы и перколяторы. Приходите на 
+                    наши <a href="/classes.html">мастер классы</a>, чтобы научиться варить лучший кофе в вашей жизни</p>
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript">
+        (function(){
+        var button = document.getElementById('toggle-menu');
+        button.addEventListener('click', function(event){
+            event.preventDefault();
+            var menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open');
+        });
+    })();
+
+    </script>
+</body>
+</html>
