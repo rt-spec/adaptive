@@ -1,0 +1,42 @@
+body{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container{
+    outline: 1px solid black;
+    display: flex;
+    min-height: 100vh;
+    --width-item: 5em;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.flex-item{
+    margin: 50px;
+    width: var(--width-item);
+    height: var(--width-item);
+}
+.first{
+    background-color: rgb(231, 17, 17);
+    
+}
+.second{
+    background-color: rgb(11, 238, 41);
+}
+.third{
+    background-color: rgb(17, 160, 231);
+}
+.fourth{
+    background-color: rgb(241, 218, 11);
+}
+.fifth{
+    background-color: rgb(231, 17, 153);
+}
+.sixth{
+    background-color: rgb(7, 39, 251);
+}
+.seventh{
+    background-color: rgb(79, 20, 20);
+}
+.eighth{
+    background-color: rgb(56, 42, 42);
+}

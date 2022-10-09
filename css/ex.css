@@ -1,0 +1,21 @@
+.b{
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.second{
+    position: relative;
+
+}
+
+.ab{
+    position: absolute;
+    right: 0;
+    top:0;
+    display:none
+}
+
+.second.show .ab{
+    display: block;
+}
